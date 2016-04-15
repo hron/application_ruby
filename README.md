@@ -106,9 +106,9 @@ end
   below](#database-parameters) for more information. *(option collector)*
 * `migrate` - Run database migrations. *(default: false)*
 * `precompile_assets` - Run `rake assets:precompile`. *(default: auto-detect)()
-* `rails_env` – Rails environment name. *(default: node.chef_environment)*
-* `secret_token` – Secret token for Rails session verification et al.
-* `secrets_mode` – Secrets configuration mode. Set to `:yaml` to generate a
+* `rails_env` - Rails environment name. *(default: node.chef_environment)*
+* `secret_token` - Secret token for Rails session verification et al.
+* `secrets_mode` - Secrets configuration mode. Set to `:yaml` to generate a
   Rails 4.2 secrets.yml. Set to `:initializer` to update
   `config/initializers/secret_token.rb`. *(default: auto-detect)*
 
@@ -205,20 +205,20 @@ end
 
 #### Actions
 
-* `:enable` – Create, enable and start the service. *(default)*
-* `:disable` – Stop, disable, and destroy the service.
-* `:start` – Start the service.
-* `:stop` – Stop the service.
-* `:restart` – Stop and then start the service.
-* `:reload` – Send the configured reload signal to the service.
+* `:enable` - Create, enable and start the service. *(default)*
+* `:disable` - Stop, disable, and destroy the service.
+* `:start` - Start the service.
+* `:stop` - Stop the service.
+* `:restart` - Stop and then start the service.
+* `:reload` - Send the configured reload signal to the service.
 
 #### Properties
 
-* `path` – Base path for the application. *(name attribute)*
-* `config_path` – Path to a Thin configuration file.
-* `port` – Port to listen on. *(default: 80)*
-* `service_name` – Name of the service to create. *(default: auto-detect)*
-# `user` – User to run the service as. *(default: application owner)*
+* `path` - Base path for the application. *(name attribute)*
+* `config_path` - Path to a Thin configuration file.
+* `port` - Port to listen on. *(default: 80)*
+* `service_name` - Name of the service to create. *(default: auto-detect)*
+# `user` - User to run the service as. *(default: application owner)*
 
 ### `application_unicorn`
 
@@ -234,19 +234,19 @@ end
 
 #### Actions
 
-* `:enable` – Create, enable and start the service. *(default)*
-* `:disable` – Stop, disable, and destroy the service.
-* `:start` – Start the service.
-* `:stop` – Stop the service.
-* `:restart` – Stop and then start the service.
-* `:reload` – Send the configured reload signal to the service.
+* `:enable` - Create, enable and start the service. *(default)*
+* `:disable` - Stop, disable, and destroy the service.
+* `:start` - Start the service.
+* `:stop` - Stop the service.
+* `:restart` - Stop and then start the service.
+* `:reload` - Send the configured reload signal to the service.
 
 #### Properties
 
-* `path` – Base path for the application. *(name attribute)*
-* `port` – Port to listen on. *(default: 80)*
-* `service_name` – Name of the service to create. *(default: auto-detect)*
-# `user` – User to run the service as. *(default: application owner)*
+* `path` - Base path for the application. *(name attribute)*
+* `port` - Port to listen on. *(default: 80)*
+* `service_name` - Name of the service to create. *(default: auto-detect)*
+# `user` - User to run the service as. *(default: application owner)*
 
 ## Sponsors
 
