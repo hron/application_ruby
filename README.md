@@ -67,19 +67,19 @@ end
 
 #### Actions
 
-* `:enable` – Create, enable and start the service. *(default)*
-* `:disable` – Stop, disable, and destroy the service.
-* `:start` – Start the service.
-* `:stop` – Stop the service.
-* `:restart` – Stop and then start the service.
-* `:reload` – Send the configured reload signal to the service.
+* `:enable` - Create, enable and start the service. *(default)*
+* `:disable` - Stop, disable, and destroy the service.
+* `:start` - Start the service.
+* `:stop` - Stop the service.
+* `:restart` - Stop and then start the service.
+* `:reload` - Send the configured reload signal to the service.
 
 #### Properties
 
-* `path` – Base path for the application. *(name attribute)*
-* `port` – Port to listen on. *(default: 80)*
-* `service_name` – Name of the service to create. *(default: auto-detect)*
-# `user` – User to run the service as. *(default: application owner)*
+* `path` - Base path for the application. *(name attribute)*
+* `port` - Port to listen on. *(default: 80)*
+* `service_name` - Name of the service to create. *(default: auto-detect)*
+# `user` - User to run the service as. *(default: application owner)*
 
 ### `application_rails`
 
@@ -97,15 +97,15 @@ end
 
 #### Actions
 
-* `:deploy` – Create config files and run required deployments steps. *(default)*
+* `:deploy` - Create config files and run required deployments steps. *(default)*
 
 #### Properties
 
-* `path` – Base path for the application. *(name attribute)*
-* `database` – Database settings for Rails. See [the database section
+* `path` - Base path for the application. *(name attribute)*
+* `database` - Database settings for Rails. See [the database section
   below](#database-parameters) for more information. *(option collector)*
-* `migrate` – Run database migrations. *(default: false)*
-* `precompile_assets` – Run `rake assets:precompile`. *(default: auto-detect)()
+* `migrate` - Run database migrations. *(default: false)*
+* `precompile_assets` - Run `rake assets:precompile`. *(default: auto-detect)()
 * `rails_env` – Rails environment name. *(default: node.chef_environment)*
 * `secret_token` – Secret token for Rails session verification et al.
 * `secrets_mode` – Secrets configuration mode. Set to `:yaml` to generate a
